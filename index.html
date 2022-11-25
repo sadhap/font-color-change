@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHALLENGE-4:font color change</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <!-- create container  -->
+    <div class="container">
+      <!-- add textarea for input text -->
+      <label for="input-txt">Type something:</label>
+      <textarea  rows="5" cols="30"class="input-text" id="myTextarea">
+      </textarea>
+       <div class="output">
+        <button type="button" onclick="output()"class="btn">Output</button>
+         <button id="red">Red</button>
+         <button  id="blue">Blue</button>
+         <button  id="green" class="grn">Green</button>
+        <h1 id="demo"></h1>
+        </div>
+    </div>
+    <script>
+       let inp = document.getElementById("demo");
+        let colorOne= document.getElementById("red");
+        let colorTwo = document.getElementById("blue");
+        let colorThree= document.getElementById("green");
+       
+        colorOne.addEventListener("click", redcolor);
+        function redcolor() {
+          inp.style.color = "red";
+        }
+        blue.addEventListener("click", bluecolor);
+        function bluecolor() {
+          inp.style.color= "blue";
+        }
+        green.addEventListener("click", greencolor) 
+        function greencolor()
+        { 
+            inp.style.color = "green";
+        }
+        function output() {
+        var x = document.getElementById("myTextarea").value;
+        document.getElementById("demo").innerHTML = x;
+}
+</script>
+</body>
+</html>
