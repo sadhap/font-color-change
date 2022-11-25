@@ -62,5 +62,13 @@ button {
   label{
     background-color: aliceblue;
    }
-
+#red{
+    background-color:red;
+}
+#blue{
+    background-color:blue;
+}
+#green{
+    background-color:green;
+}
   
